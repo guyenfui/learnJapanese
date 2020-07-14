@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>連絡先</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("menu.html");
+    });
+    </script> 
+</head>
+<body>
+	<div id="includedContent" ></div>
+	<br><br><br>
+	
+	
+	<th:block th:include="/menu"></th:block>  
+	
+	<body>
+    <form name="aspnetForm" method="post" action="./ContactUs.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAQ9kFgICAw8WAh4EVGV4dAUmPHRpdGxlPkxpw6puIGjhu4cgLSBEZWtpcnUgSlNDPC90aXRsZT5kZBbAudQnT21oRy8zfkeEMV7Apm74CrS4tfGANODT0rSR" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7A3CBA71" />
+</div>
+        
+<!-- Dekiru Libs - Version: 1.0.0.0-->
+<script src="/web_js/plugin/jquery-3.2.1.min.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/plugin/bootstrap.min.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/plugin/bootstrap-select.min.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/jquery.cookie.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/jquery.tipsy.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/plugin/swiper.min.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/utils.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/common.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/site.js?t=1.0.0.0" type="text/javascript" ></script>
+<script src="/web_js/async-defer-helper.js?t=1.0.0.0" type="text/javascript" ></script>
+<!-- End Libs, Cached-->
+        <div class="menu-blog-dekiru">
+            <nav class="navbar navbar-default dvmenu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <img src="/web_image/logo-menu-dekiru.png" class="img-responsive"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+
+        <div class="progressContainer">
+            <div class="progressBar">
+            </div>
+        </div>
+        
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5507.8065947224095!2d139.7035428532029!3d35.52494859731647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860bb04cd64bb%3A0xb747cf326574e97!2s1-ch%C5%8Dme-12-2%20Kaizuka%2C%20Kawasaki-ku%2C%20Kawasaki%2C%20Kanagawa%20210-0014!5e0!3m2!1svi!2sjp!4v1594689176068!5m2!1svi!2sjp" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- <iframe src="https://snazzymaps.com/embed/28478" width="100%" height="400px" style="border:none;"></iframe>      -->   
+    </div>
+    <div class="content-list-news" id="contact-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="title-type-news">私たちに関する情報</h3>
+                    <div class="crossbar-news"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="contact-item">
+                                <label><i class="fa fa-phone"></i>電話</label>
+                                <b>07044774289</b>
+                            </div>
+                            <div class="contact-item">
+                                <label><i class="fa fa-envelope"></i>Eメール</label>
+                                <b>huynm1103@gmail.com</b>
+                            </div>
+                            <div class="contact-item">
+                                <label><i class="fa fa-map-marker"></i>住所</label>
+                                <b>神奈川県川崎市川崎区</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h3 class="title-type-news">お問い合わせ</h3>
+                    <div class="crossbar-news"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-item">
+                            <div class="form-group">
+                                <input type="text" id="txtFullname" class="form-control" placeholder="フルネーム *" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-item">
+                            <div class="form-group">
+                                <input type="text" id="txtPhone" class="form-control" placeholder="電話番号 *"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-item">
+                            <div class="form-group">
+                                <input type="text" id="txtEmail" class="form-control" placeholder="Eメール" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-item">
+                            <div class="form-group">
+                                <textarea id="txtContent" class="form-control" rows="5" placeholder="内容　*"></textarea>
+                            </div>
+                        </div>
+                        <!-- Simple pop-up dialog box containing a form -->
+<dialog id="favDialog">
+  <form method="dialog">
+    <p><label>Favorite animal:
+    </label></p>
+    <menu>
+      <button>Cancel</button>
+      <button>Confirm</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="updateDetails">連絡先を送る</button>
+</menu>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-item">
+                            <div class="form-group">
+                                <div class="btn btn-danger" id="btnSendContact">連絡先を送る</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row main-content">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        
+                        <h4>FPT 大学</h4>
+                        <div class="info-contact address">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>神奈川県川崎市川崎区</p>
+                        </div>
+                        <div class="info-contact phone">
+                            <a href="mailto:huynm1103@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>huynm1103@gmail.com</a>
+                        </div>
+                        <div class="info-contact address">
+                            <a href="tel:070-.4477.4289"><i class="fa fa-phone" aria-hidden="true"></i>070-4477-4289</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-sm-push-1 text-right">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdekiru.vn%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=418626705173072" width="340" height="154" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 menu-footer">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 connect text-right">
+                            <ul>
+                                <li><a href="https://www.youtube.com/channel/UCegAYkniqilj7PUp5jpm4gA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/dekiru.vn" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/dekirunihongo" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0)" class="go-to-top">
+            <i class="gtt-arrowtop"></i>
+        </a>
+    </form>
+</body>
+
+       
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>日本語</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("menu.html");
+    });
+    </script> 
+</head>
+<body>
+	<div id="includedContent" ></div>
+	<br><br><br>
+	<div class="container">
+		こんにちは <span sec:authentication="principal.username"> User</span>
+	</div>
+	
+	<th:block th:include="/menu"></th:block>  
+	
+	
+
+       
+    
+</body>
+</html>
